@@ -1,3 +1,66 @@
 body {
   margin: 0;
 }
+
+// #region header
+.header{
+  box-sizing: border-box;
+  padding: 36px 120px 203px;
+  height: 100vh;
+  background-image: url('../image/header-bg.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icon{
+  display: flex;
+  gap: 32px;
+}
+
+// #endregion
+
+// #region icon
+.icon{
+  display: block;
+  height: 32px;
+  font-weight: 32;
+
+}
+
+.icon--phone{
+  background-image: url("src/Icon/Icon-Phone-call.png");
+}
+
+.icon--menu{
+  background-image: url("src/Icon/Icon-Burger-menu.png");
+}
+
+.header__bottom{
+  font-family: Poppins, sans-serif;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+}
+
+// #endregion
+
+// #region menu
+// #endregion
+
+// #region main
+// #endregion
+
+// #region footer
+// #endregion
+
