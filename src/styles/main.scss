@@ -1,11 +1,35 @@
-body {
+// #region page
+.page{
+  font-family: Poppins, sans-serif;
+  line-height: 100%;
+  color: #FFF;
+  scroll-behavior: smooth;
+}
+
+.page__body{
   margin: 0;
 }
+
+.page__menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target{
+  opacity: 1;
+  pointer-events: all;
+ }
+
+ // #endregion
 
 // #region header
 .header{
   box-sizing: border-box;
-  padding: 36px 120px 203px;
   height: 100vh;
   background-image: url('../image/header-bg.png');
   background-size: cover;
@@ -16,14 +40,8 @@ body {
   justify-content: space-between;
 }
 
-.header__top{
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__icon{
-  display: flex;
-  gap: 32px;
+.top-bar__header__bottom{
+  padding: 0 0 203px;
 }
 
 // #endregion
@@ -44,6 +62,10 @@ body {
   background-image: url("src/Icon/Icon-Burger-menu.png");
 }
 
+.icon--close{
+  background-image: url("src/Icon/icon-Close.png");
+}
+
 .header__bottom{
   font-family: Poppins, sans-serif;
   font-style: Bold;
@@ -56,6 +78,82 @@ body {
 // #endregion
 
 // #region menu
+.top-bar{
+  padding: 36px 120px ;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.top-bar__icon{
+  display: flex;
+  gap: 32px;
+}
+
+.top-bar__logo{
+  display: flex;
+}
+
+.menu{
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #C2C2C2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu__content{
+  padding-inline: 120px;
+}
+
+.menu__nav{
+  margin-bottom: 40px;
+}
+
+.menu__top{
+  margin-bottom: 32px;
+}
+
+.menu__phone-numbers{
+  color: #1D1D1D;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 16px;
+
+}
+
+.menu__Book-a-test-ride{
+  color: #1D1D1D;
+  text-decoration: none;
+  padding-bottom: 7px;
+  border-bottom: 1px solid  #1D1D1D ;
+  width: fit-content;
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+.nav__link{
+  color: #1D1D1D;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+.nav__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
 // #endregion
 
 // #region main

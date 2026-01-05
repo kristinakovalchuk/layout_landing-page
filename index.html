@@ -1,6 +1,6 @@
 <!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -12,67 +12,104 @@
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <script
       src="src/scripts/main.js"
       defer
     ></script>
   </head>
 <!-- #endregion -->
-  <body>
+  <body class="page__body">
 
     <header class="header">
 
-      <div class="header__top">
-        <a href="#" >
+      <div class="top-bar">
+        <a href="#" class="top-bar__logo" >
           <img src="src/Logo.png" alt="MyBike logo">
         </a>
 
-        <div class="header__icon">
+        <div class="top-bar__icon">
           <a href="#" class="icon icon--phone">
             <img src="src/Icon/Icon-Phone-call.png" alt="icon-phone">
           </a>
 
-          <a href="#" class="icon icon--menu">
+          <a href="#menu" class="icon icon--menu">
             <img src="src/Icon/Icon-Burger-menu.png" alt="icon--menu">
           </a>
         </div>
       </div>
 
-      <div class="header__bottom">
+      <div class="header__bottom top-bar__header__bottom">
         <h1>Take the Streets</h1>
       </div>
 
     </header>
 
-    <aside class="menu" >
-      <div class="menu__top">
-        <a href="#" >
-          <img src="src/Logo.png" alt="MyBike logo">
-        </a>
-
-        <div class="menu__icon">
-          <a href="#" class="icon icon--phone">
-            <img src="src/Icon/icon-Close.png" alt="icon-close">
+    <aside class="page__menu menu" id="menu" >
+        <div class="top-bar menu__top">
+          <a href="#" class="top-bar__logo" >
+            <img src="src/Logo-dark.png" alt="MyBike logo">
           </a>
+
+            <a href="#" class="icon icon--close">
+              <a href="#" >
+                <img src="src/Icon/icon-Close.png" alt="Close">
+              </a>
+            </a>
+          </div>
         </div>
+
+      <div class="menu__content">
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#AboutUs">About Us</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#CompareBikes">Compare Bikes</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link"  href="#Details">Details</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#Contacts">Contacts</a>
+            </li>
+
+          </ul>
+        </nav>
+
+
+        <a herf="tel:+1 234 5555-55-55" class="menu__phone-numbers">+1 234 5555-55-55</a>
+        <a herf="tel:+1 234 5555-55-55" class="menu__Book-a-test-ride">Book a test ride</a>
+
       </div>
     </aside>
 
     <main class="main">
 
-      <section class="About-Us">
+      <section class="About-Us" id="AboutUs">
         <h1>Move Free</h1>
       </section>
 
-      <section class="Compare-Bikes">
+      <section class="Compare-Bikes" id="CompareBikes">
         <h1>Compare Bikes</h1>
       </section>
 
-      <section class="Details">
+      <section class="Details" id="Details">
         <h1>The Details</h1>
       </section>
 
-      <section class="Contacts">
+      <section class="Contacts" id="Contacts">
         <h1>Contact us</h1>
       </section>
 
