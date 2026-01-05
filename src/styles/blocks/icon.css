@@ -1,0 +1,27 @@
+.icon{
+  display: block;
+  height: 32px;
+  font-weight: 32;
+
+}
+
+.icon--phone{
+  background-image: url("src/Icon/Icon-Phone-call.png");
+}
+
+.icon--menu{
+  background-image: url("src/Icon/Icon-Burger-menu.png");
+}
+
+.icon--close{
+  background-image: url("src/Icon/icon-Close.png");
+}
+
+.header__bottom{
+  font-family: Poppins, sans-serif;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+}

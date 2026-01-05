@@ -1,0 +1,15 @@
+.header{
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url('../image/header-bg.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-bar__header__bottom{
+  padding: 0 0 203px;
+}
