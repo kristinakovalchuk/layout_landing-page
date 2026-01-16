@@ -1,4 +1,4 @@
-.menu{
+.menu {
   box-sizing: border-box;
   height: 100vh;
   background-color: #C2C2C2;
@@ -6,33 +6,32 @@
   text-transform: uppercase;
 }
 
-.menu__content{
-  padding-inline: 120px;
+.menu__content {
+  padding-inline: 20px;
 }
 
-.menu__nav{
+.menu__nav {
   margin-bottom: 40px;
 }
 
-.menu__top{
+.menu__top {
   margin-bottom: 32px;
 }
 
-.menu__phone-numbers{
+.menu__phone-numbers {
   color: #1D1D1D;
   text-decoration: none;
   display: block;
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 16px;
-
 }
 
-.menu__Book-a-test-ride{
+.menu__Book-a-test-ride {
   color: #1D1D1D;
   text-decoration: none;
   padding-bottom: 7px;
-  border-bottom: 1px solid  #1D1D1D ;
+  border-bottom: 1px solid #1D1D1D;
   width: fit-content;
   display: block;
   font-size: 12px;

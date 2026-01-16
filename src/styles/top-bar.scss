@@ -1,0 +1,36 @@
+.top-bar {
+  padding-block: 24px;
+  @include constent-Padding-Inline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include on-Tablet{
+    padding-block: 36px ;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+
+    @include on-Tablet{
+      gap: 32px;
+    }
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo{
+    height: 38px;
+
+    @include on-Tablet{
+      height: 56px;
+    }
+
+    @include hover(transform, scale(1.2));
+  }
+}
+
+

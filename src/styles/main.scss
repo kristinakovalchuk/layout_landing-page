@@ -1,13 +1,10 @@
-@import "src/styles/blocks/header.css";
-@import "src/styles/blocks/icon.css";
-@import "src/styles/blocks/menu.css";
-@import "src/styles/blocks/nav.css";
-@import "src/styles/blocks/page.css";
-@import "src/styles/blocks/top-bar.css";
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "./header";
+@import "./icon";
+@import "./menu";
+@import "./nav";
+@import "./page";
+@import "./top-bar";
 
-// #region main
-// #endregion
-
-// #region footer
-// #endregion
 
