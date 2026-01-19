@@ -19,6 +19,10 @@
     @include on-tablet{
       margin-bottom: 8px ;
     }
+
+    @include on-tablet{
+      margin-bottom: 24px ;
+    }
   }
 
   &__phone-numbers{
