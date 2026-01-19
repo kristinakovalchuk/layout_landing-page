@@ -6,7 +6,7 @@
   text-transform: uppercase;
 
   &__content{
-    @include constent-Padding-Inline;
+    @include content-padding-inline;
   }
 
   &__nav{
@@ -16,7 +16,7 @@
   &__top{
     margin-bottom: 24px;
 
-    @include on-Tablet{
+    @include on-tablet{
       margin-bottom: 8px ;
     }
   }
