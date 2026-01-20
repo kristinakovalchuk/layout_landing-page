@@ -5,10 +5,6 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  &__content{
-    @include content-padding-inline;
-  }
-
   &__nav{
     margin-bottom: 40px;
   }
@@ -35,7 +31,7 @@
 
   }
 
-  &__Book-a-test-ride{
+  &__book-test-ride{
     color: #1D1D1D;
     text-decoration: none;
     padding-bottom: 7px;

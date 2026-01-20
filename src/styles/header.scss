@@ -1,13 +1,7 @@
 .header{
-  box-sizing: border-box;
-  height: 100vh;
   background-image: url('../image/header-bg.svg');
   background-size: cover;
   background-position: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   &__title{
     margin: 0;
@@ -27,11 +21,16 @@
       font-size: 80px;
     }
   }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+  }
 
   &__bottom{
     padding-bottom: 88px;
-
-    @include content-padding-inline;
 
     @include on-tablet{
       padding-bottom: 130px;

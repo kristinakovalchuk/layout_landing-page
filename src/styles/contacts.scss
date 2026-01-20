@@ -1,0 +1,106 @@
+.contacts__wrapper {
+  @include pageGrid;
+  align-items: start;
+}
+
+.contact {
+  &__inputs {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+
+    &--text {
+      padding-left: 16px;
+      width: 100%;
+      height:  $input-fix-height;
+
+      background-color: $input-bgc;
+      border: none;
+      color:$input-text-color;
+
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      outline: none;
+      box-sizing: border-box;
+
+      @include hover(transform, scale(1.05));
+
+      &::placeholder {
+        color: $input-text-color-defolt;
+      }
+
+      &:hover{
+        border: 1px solid #D5D7DE
+      }
+    }
+
+    &--similar{
+      border-radius: 40px;
+    }
+
+    &--message {
+      border-radius: 16px;
+      padding: 14px 16px;
+      height: 160px;
+      resize: none;
+      border: 16px;
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+  }
+
+  &__button {
+    @include buttons;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+
+  &__data {
+    row-gap: 32px;
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 4 / -1;
+    }
+
+    @include on-desktop {
+      grid-column: 8 / -1;
+    }
+
+    &--title {
+      margin: 0 0 8px 0;
+      font-weight: 400;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+
+    &--description {
+      margin: 0;
+      margin-bottom: 32px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+  }
+}
