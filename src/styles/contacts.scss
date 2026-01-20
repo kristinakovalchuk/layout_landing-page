@@ -1,5 +1,6 @@
 .contacts__wrapper {
-  @include pageGrid;
+  @include page-grid;
+
   align-items: start;
 }
 
@@ -32,7 +33,7 @@
       border: none;
       color:$input-text-color;
 
-      font-family: 'Poppins', sans-serif;
+      font-family: Poppins, sans-serif;
       font-weight: 400;
       font-size: 14px;
       outline: none;
@@ -68,6 +69,7 @@
 
   &__button {
     @include buttons;
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -89,10 +91,10 @@
     }
 
     &--title {
-      margin: 0 0 8px 0;
+      margin: 0 0 8px ;
       font-weight: 400;
       font-size: 14px;
-      color: #FFFFFF;
+      color: $main-text-color;
     }
 
     &--description {
@@ -100,7 +102,7 @@
       margin-bottom: 32px;
       font-weight: 500;
       font-size: 16px;
-      color: #FFFFFF;
+      color: $main-text-color;
     }
   }
 }

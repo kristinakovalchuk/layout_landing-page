@@ -1,5 +1,5 @@
 .move-free{
- @include pageGrid;
+ @include page-grid;
 
   &__title{
     grid-column: 1/ -1;
