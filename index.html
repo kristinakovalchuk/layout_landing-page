@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>MyBike</title>
+    <link rel="icon" href="src/Icon/favicon.png" type="image/png">
     <link rel="stylesheet" href="/src/styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -279,22 +280,25 @@
 
                 <div class="contact__inputs">
                   <div class="contact__input">
-                    <input
-                      class="contact__input--text contact__input--similar "
-                      type="text"
-                      placeholder="Name"
-                    />
 
-                    <input
-                      class="contact__input--text contact__input--similar"
-                      type="text"
-                      placeholder="Email"
-                    />
+                    <form onsubmit="this.reset(); return false;">
+                      <input
+                        class="contact__input--text contact__input--similar "
+                        type="text"
+                        placeholder="Name"
+                      />
 
-                    <textarea
-                    class="contact__input--text contact__input--message"
-                    placeholder="Message"
-                  ></textarea>
+                      <input
+                        class="contact__input--text contact__input--similar"
+                        type="text"
+                        placeholder="Email"
+                      />
+
+                      <textarea
+                        class="contact__input--text contact__input--message"
+                        placeholder="Message"
+                      ></textarea>
+                    </form>
                   </div>
 
                   <div class="contact__buttons">
@@ -312,17 +316,19 @@
                 <div class="contact__data">
                   <div class="contact__data__phone">
                     <p class="contact__data--title">Phone</p>
-                    <p class="contact__data--description">+1 234 5555-55-55</p>
+                    <a href="tel:+12345555555" class="contact__data--description">+1 234 5555-55-55</a>
                   </div>
 
                   <div class="contact__data__email">
                     <p class="contact__data--title">Email</p>
-                    <p class="contact__data--description">hello@miami.com</p>
+                    <a href="#" class="contact__data--description" >hello@miami.com</a>
                   </div>
 
                   <div class="contact__data__address">
                     <p class="contact__data--title">Address</p>
-                    <p class="contact__data--description">400 first ave. <br> suite 700 <br>Minneapolis, MN 55401</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=400+first+ave.+suite+700+Minneapolis,+MN+55401" target="_blank" rel="noopener noreferrer" class="contact__data--description">
+                      400 first ave. <br> suite 700 <br>Minneapolis, MN 55401
+                    </a>
                   </div>
                 </div>
 

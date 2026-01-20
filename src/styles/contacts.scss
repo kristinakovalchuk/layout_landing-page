@@ -1,6 +1,6 @@
 .contacts__wrapper {
   @include page-grid;
-
+  row-gap: 32px;
   align-items: start;
 }
 
@@ -52,6 +52,8 @@
 
     &--similar{
       border-radius: 40px;
+      display: block;
+      margin-bottom: 16px;
     }
 
     &--message {
@@ -79,6 +81,8 @@
 
 
   &__data {
+    display: flex;
+    flex-direction: column;
     row-gap: 32px;
     grid-column: 1 / -1;
 
@@ -91,18 +95,25 @@
     }
 
     &--title {
-      margin: 0 0 8px ;
+      margin: 0 0 8px;
       font-weight: 400;
       font-size: 14px;
       color: $main-text-color;
+      text-decoration: none;
     }
 
     &--description {
-      margin: 0;
-      margin-bottom: 32px;
+      display: block;
+      margin: 0 ;
       font-weight: 500;
       font-size: 16px;
       color: $main-text-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $second-text-color;
+      }
     }
   }
 }
+
