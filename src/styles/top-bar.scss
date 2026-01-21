@@ -5,6 +5,25 @@
   justify-content: space-between;
   align-items: center;
 
+  &__phone-number {
+    color: $main-text-color;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: right;
+
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: all 0.3s ease-in-out;
+
+    white-space: nowrap;
+  }
+
   @include on-tablet {
     padding-block: 36px;
   }
@@ -12,9 +31,15 @@
   &__icons {
     display: flex;
     gap: 24px;
+    align-items: center;
 
     @include on-tablet {
-      gap: 32px;
+
+      &:hover .top-bar__phone-number {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
     }
   }
 
