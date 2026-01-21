@@ -45,12 +45,12 @@
   }
 
   &__photo {
-    @include hover(transform, scale(1.05));
-
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @include hover(transform, scale(1.05));
   }
 
   &__descriptions {
@@ -74,11 +74,10 @@
   }
 
   &__button {
-    @include buttons;
-
     grid-column: 1 / -1;
-
     width: 100%;
+
+    @include buttons;
 
     @include on-tablet {
       grid-column: 2 / span 4;

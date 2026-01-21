@@ -30,7 +30,7 @@
   text-align: center;
   letter-spacing: -1.5px;
   line-height: 100%;
-  color: #FFF;
+  color: #fff;
 }
 
 @media (min-width: 576px) {
@@ -194,7 +194,7 @@
 
 .page {
   font-family: Poppins, sans-serif;
-  color: #FFF;
+  color: #fff;
   scroll-behavior: smooth;
 }
 
@@ -294,7 +294,7 @@
 }
 
 .mainn {
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
 }
 
 .mainn__content {
@@ -341,10 +341,11 @@
 }
 
 .compare-bikes__products {
+  gap: 40px 20px;
+
   --columns: 2;
 
   display: grid;
-  column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 }
 
@@ -360,10 +361,6 @@
   .compare-bikes__products {
     --columns: 12;
   }
-}
-
-.compare-bikes__products {
-  row-gap: 40px;
 }
 
 .compare-bikes__product {
@@ -532,18 +529,15 @@
 }
 
 .detail__photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
 .detail__photo:hover {
   transform: scale(1.05);
-}
-
-.detail__photo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .detail__descriptions__title {
@@ -565,10 +559,12 @@
 }
 
 .detail__button {
+  grid-column: 1/-1;
+  width: 100%;
   display: grid;
   height: 56px;
-  background-color: #FFF;
-  color: #1D1D1D;
+  background-color: #fff;
+  color: #1d1d1d;
   border: 1px solid transparent;
   border-radius: 40px;
   font-weight: 700;
@@ -585,12 +581,7 @@
 }
 
 .detail__button:active {
-  box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.6392156863);
-}
-
-.detail__button {
-  grid-column: 1/-1;
-  width: 100%;
+  box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
 }
 
 @media (min-width: 576px) {
@@ -606,10 +597,12 @@
 }
 
 .contacts__wrapper {
+  gap: 32px 20px;
+  align-items: start;
+
   --columns: 2;
 
   display: grid;
-  column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 }
 
@@ -625,11 +618,6 @@
   .contacts__wrapper {
     --columns: 12;
   }
-}
-
-.contacts__wrapper {
-  row-gap: 32px;
-  align-items: start;
 }
 
 .contact__inputs {
@@ -660,7 +648,7 @@
   padding-left: 16px;
   width: 100%;
   height: 48px;
-  background-color: #F8F8FA;
+  background-color: #f8f8fa;
   border: none;
   color: #292929;
   font-family: Poppins, sans-serif;
@@ -673,14 +661,11 @@
 
 .contact__input--text:hover {
   transform: scale(1.05);
+  border: 1px solid #d5d7de;
 }
 
 .contact__input--text::placeholder {
-  color: #7E7E83;
-}
-
-.contact__input--text:hover {
-  border: 1px solid #d5d7de;
+  color: #7e7e83;
 }
 
 .contact__input--similar {
@@ -702,10 +687,12 @@
 }
 
 .contact__button {
+  width: 100%;
+  box-sizing: border-box;
   display: grid;
   height: 56px;
-  background-color: #FFF;
-  color: #1D1D1D;
+  background-color: #fff;
+  color: #1d1d1d;
   border: 1px solid transparent;
   border-radius: 40px;
   font-weight: 700;
@@ -722,15 +709,7 @@
 }
 
 .contact__button:active {
-  box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.6392156863);
-}
-
-.contact__button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
 }
 
 .contact__data {
@@ -756,7 +735,7 @@
   margin: 0 0 8px;
   font-weight: 400;
   font-size: 14px;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -765,7 +744,7 @@
   margin: 0;
   font-weight: 500;
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
