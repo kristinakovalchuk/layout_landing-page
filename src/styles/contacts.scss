@@ -28,11 +28,11 @@
     &--text {
       padding-left: 16px;
       width: 100%;
-      height:  $input-fix-height;
+      height: $input-fix-height;
 
       background-color: $input-bgc;
       border: none;
-      color:$input-text-color;
+      color: $input-text-color;
 
       font-family: Poppins, sans-serif;
       font-weight: 400;
@@ -46,12 +46,12 @@
         color: $input-text-color-defolt;
       }
 
-      &:hover{
-        border: 1px solid #D5D7DE
+      &:hover {
+        border: 1px solid #d5d7de;
       }
     }
 
-    &--similar{
+    &--similar {
       border-radius: 40px;
       display: block;
       margin-bottom: 16px;
@@ -80,7 +80,6 @@
     box-sizing: border-box;
   }
 
-
   &__data {
     display: flex;
     flex-direction: column;
@@ -105,7 +104,7 @@
 
     &--description {
       display: block;
-      margin: 0 ;
+      margin: 0;
       font-weight: 500;
       font-size: 16px;
       color: $main-text-color;
@@ -117,4 +116,3 @@
     }
   }
 }
-

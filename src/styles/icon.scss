@@ -12,20 +12,19 @@
     width: 32px;
   }
 
-  &--phone{
-    background-image: url("../Icon/Icon-Phone-call.svg");
+  &--phone {
+    background-image: url('../Icon/Icon-Phone-call.svg');
   }
 
-  &--menu{
-    background-image: url("../Icon/Icon-Burger-menu.svg");
+  &--menu {
+    background-image: url('../Icon/Icon-Burger-menu.svg');
 
-    &:hover{
-      background-image: url("../Icon/Icon-Burger-menu-hover.svg");
+    &:hover {
+      background-image: url('../Icon/Icon-Burger-menu-hover.svg');
     }
   }
 
-  &--close{
-    background-image: url("../Icon/icon-Close.svg");
+  &--close {
+    background-image: url('../Icon/icon-Close.svg');
   }
 }
-

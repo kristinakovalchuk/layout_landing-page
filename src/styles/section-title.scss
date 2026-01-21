@@ -1,4 +1,4 @@
-.section-title{
+.section-title {
   margin: 0;
   margin-bottom: 48px;
 
@@ -8,15 +8,15 @@
   letter-spacing: -1.5px;
   text-align: center;
 
-  @include on-tablet{
+  @include on-tablet {
     font-size: 48px;
   }
 
-  @include on-desktop{
+  @include on-desktop {
     font-size: 64px;
   }
 
-  &--alight--left{
+  &--alight--left {
     text-align: left;
   }
 }

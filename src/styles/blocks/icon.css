@@ -6,13 +6,13 @@
 }
 
 .icon--phone {
-  background-image: url("src/Icon/Icon-Phone-call.png");
+  background-image: url('src/Icon/Icon-Phone-call.png');
 }
 
 .icon--menu {
-  background-image: url("src/Icon/Icon-Burger-menu.png");
+  background-image: url('src/Icon/Icon-Burger-menu.png');
 }
 
 .icon--close {
-  background-image: url("src/Icon/icon-Close.png");
+  background-image: url('src/Icon/icon-Close.png');
 }

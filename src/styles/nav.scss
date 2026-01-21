@@ -1,5 +1,5 @@
-.nav{
-  &__list{
+.nav {
+  &__list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -9,33 +9,30 @@
     gap: 32px;
   }
 
-
-  &__link{
+  &__link {
     position: relative;
-    color: #1D1D1D;
+    color: #1d1d1d;
     text-decoration: none;
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 2px;
 
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       display: block;
       width: 100%;
       bottom: -8px;
       height: 1px;
-      background-color: #1D1D1D;
+      background-color: #1d1d1d;
 
       transition: transform 0.3s;
       transform: scale(0);
       transform-origin: left;
     }
 
-    &:hover::after{
+    &:hover::after {
       transform: scale(1);
     }
   }
 }
-
-
