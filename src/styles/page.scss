@@ -2,14 +2,18 @@
   font-family: Poppins, sans-serif;
   color: $main-text-color;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  line-height: 1.4;
 
   &:has(.page__menu:target) {
     overflow: hidden;
   }
 
   &__body {
-    margin: 0;
+    overflow-x: hidden;
     min-width: 320px;
+    margin: 0;
+    background-color: #1d1d1d;
   }
 
   &__menu {

@@ -1,7 +1,12 @@
 .header {
   background-image: url('../image/header-bg.svg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: right;
+
+  @include on-tablet{
+    background-position: center;
+  }
 
   &__title {
     margin: 0;
@@ -41,3 +46,4 @@
     }
   }
 }
+

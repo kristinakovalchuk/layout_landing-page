@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 
   &__phone-number {
     color: $main-text-color;
@@ -15,6 +16,8 @@
     letter-spacing: 2px;
     text-align: right;
 
+    overflow: hidden;
+    max-width: 0;
 
     opacity: 0;
     visibility: hidden;
@@ -28,7 +31,7 @@
     padding-block: 36px;
   }
 
-  &__icons {
+  &__icon {
     display: flex;
     gap: 24px;
     align-items: center;
